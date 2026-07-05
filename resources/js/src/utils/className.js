@@ -1,0 +1,1 @@
+export const buttonBase = "px-8 select-none py-3 rounded-full font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95";

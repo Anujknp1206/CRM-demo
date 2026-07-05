@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Custom Font Faces */
+@font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DM Serif";
+    src: url("/fonts/DM_Serif_Text/DMSerifText-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("/fonts/georgia/georgia.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection {
+    background-color: #c3baff;
+    color: #1a1a2e;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Georgia", ui-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif", sans-serif;
+}
+
+p {
+    font-family: "Georgia", ui-serif;
+}

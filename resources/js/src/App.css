@@ -1,0 +1,180 @@
+/* Base font setup */
+a {
+  font-family: "Georgia", ui-serif;
+}
+
+/* Main section styling */
+.section-content {
+  all: unset;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0.75rem;
+  line-height: 1.75;
+  font-size: 1.125rem; /* 18px for better legibility */
+  color: #333;
+}
+
+/* Headings (luxury look, clean) */
+.section-content h1,
+.section-content h2,
+.section-content h3,
+.section-content h4,
+.section-content h5,
+.section-content h6 {
+  font-family: "DM Serif", serif;
+  color: #111;
+  line-height: 1.3;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.section-content h1 { font-size: 2.25rem; } /* ~36px */
+.section-content h2 { font-size: 1.875rem; } /* ~30px */
+.section-content h3 { font-size: 1.5rem; }
+.section-content h4 { font-size: 1.25rem; }
+.section-content h5 { font-size: 1.125rem; }
+.section-content h6 { font-size: 1rem; }
+
+/* Paragraphs */
+.section-content p {
+  font-family: "Georgia", ui-serif;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+/* Links */
+.section-content a {
+  font-family: "Georgia", ui-serif;
+  text-decoration: underline;
+  color: #1a56db;
+  transition: color 0.3s ease;
+}
+.section-content a:hover {
+  color: #0d3bb2;
+}
+
+/* Lists */
+.section-content ul,
+.section-content ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+  padding-left: 1rem;
+  font-family: "Georgia", ui-serif;
+}
+
+.section-content li {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Tables */
+.section-content table {
+  font-family: "Georgia", ui-serif;
+  font-size: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.section-content th,
+.section-content td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+}
+
+/* Media */
+.section-content img,
+.section-content iframe,
+.section-content video {
+  max-width: 100%;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+}
+
+/* Quotes & Code */
+.section-content blockquote {
+  font-family: "Georgia", ui-serif;
+  font-size: 1.25rem;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  color: #555;
+  margin: 1.5rem 0;
+}
+
+.section-content code,
+.section-content pre {
+  font-family: "Georgia", ui-serif;
+  background-color: #f9f9f9;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Inline emphasis */
+.section-content strong {
+  font-weight: bold;
+}
+.section-content em {
+  font-style: italic;
+}
+
+/* Divider */
+.section-content hr {
+  height: 1px;
+  background-color: #ddd;
+  border: none;
+  margin: 2rem 0;
+}
+
+/* Footer content */
+.footer-section-content p {
+  text-align: center;
+  font-family: "Georgia", ui-serif;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Utility: Gradient Animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Utility: Pulse Animation */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.1; }
+  50% { transform: scale(1.05); opacity: 0.15; }
+  100% { transform: scale(1); opacity: 0.1; }
+}
+.animate-pulse {
+  animation: pulse 4s ease-in-out infinite;
+}
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Floating & Slider Effects */
+.floating-element {
+  will-change: transform;
+}
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-slide {
+  animation: slide 40s linear infinite;
+  display: flex;
+  width: max-content;
+}
+.animate-slide:hover {
+  animation-play-state: paused;
+}
+.-mx-\[50vw\] {
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
