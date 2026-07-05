@@ -12,7 +12,7 @@
   <link rel="stylesheet" defer href="{{url('/')}}/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" defer href="{{url('/')}}/admin/dist/css/adminlte.min.css">
-  <link rel="icon" type="image/x-icon" href="{{ asset('admin/uploads/logo/' . $settings->logo) }}">
+  <link rel="icon" type="image/x-icon" href="{{ asset('admin/uploads/logo/' . $settings->logo) ?? '' }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
